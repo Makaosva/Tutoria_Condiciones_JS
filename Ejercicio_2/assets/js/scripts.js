@@ -9,15 +9,17 @@ function changeColor() {
   let mensaje;
   mensaje = `A Seleccionado el color `;
   //alert(mensaje);
-  if (colorSeleccionado === "red") {
-    mensaje += "Rojo";
-  } else if (colorSeleccionado === "blue") {
-    mensaje += "Azul";
-  } else if (colorSeleccionado === "yellow") {
-    mensaje += "Amarillo";
-  }else if (colorSeleccionado === "green") {
-    mensaje += "Verde";
-  }
+//   if (colorSeleccionado === "red") {
+//     mensaje += "Rojo";
+//   } else if (colorSeleccionado === "blue") {
+//     mensaje += "Azul";
+//   } else if (colorSeleccionado === "yellow") {
+//     mensaje += "Amarillo";
+//   } else if (colorSeleccionado === "green") {
+//     mensaje += "Verde";
+//   }
+
+  colorSeleccionado == "red" ? (mensaje += "Rojo") : (mensaje += "Otro Color");
 
   document.getElementById("mensaje").innerText = mensaje;
 }
