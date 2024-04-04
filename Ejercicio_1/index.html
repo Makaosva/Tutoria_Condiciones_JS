@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios 1 Tutoria</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <!--Ejercicio 1: Validación de Edad con Mensajes Diferentes
+        Desarrolla un formulario de registro que solicite al usuario su edad. Utiliza una instrucción
+      `if` para validar si la edad ingresada es mayor o igual a 18 años y menor de 40 años,
+      mostrando un mensaje de bienvenida especial para este rango de edad. Además, muestra
+      un mensaje diferente para los usuarios mayores de 40 años.
+    Instrucciones:
+      1. Crea un formulario HTML que solicite la edad del usuario.
+      2. Agrega un botón de envío al formulario.
+      3. Implementa una función de validación que se active cuando se envíe el formulario.
+      4. Dentro de la función de validación, utiliza una instrucción `if` para verificar si la edad
+        ingresada está entre 18 y 40 años.
+      5. Muestra un mensaje adecuado en función del resultado de la validación:
+        "¡Bienvenido, adulto joven!" si la edad está entre 18 y 40 años, y "¡Bienvenido!" si es
+        mayor de 40 años.-->
+  <body>
+    <form>
+      <label for="edadInput">Ingresa tu edad</label>
+      <input type="number" id="edadInput" />
+      <button type="button" onclick="validarEdad()">Enviar</button>
+    </form>
+    <p id="mensaje"></p>
+  </body>
+  <script src="./assets/js/script.js"></script>
+</html>
